@@ -1,0 +1,91 @@
+.cabecalho_prod-home {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 16px 0;
+}
+
+.titulo__produtos {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--cinza-escuro);
+    padding: 16px 0;
+}
+
+.conteudo__principal-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}    
+
+.adicionar-produto {
+    text-decoration: none;
+}
+
+.icones {
+    position:relative;
+	top:31px;
+	text-align: end;
+}
+
+.icone__lixeira::before{
+	content: url(../img/icones/excluir.svg);
+	color: var(--branco);
+	font-size:18px;
+
+}
+
+.botao__editar, .botao__excluir {
+	margin-right: 0.5rem;
+	outline:none;
+    background: transparent;
+    border: none;
+}
+
+.icone__editar::before{
+	content: url(../img/icones/editar.svg);
+	color: var(--branco);
+	font-size:18px;
+}
+
+.conteudoPrincipal-produto-numero {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+.cabecalho__prod-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    }   
+
+    .titulo__produtos {
+        padding: 16px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cabecalho__prod-home {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 16px;
+    }   
+    
+    .cabecalho__prod-home .botao-azul {
+        width: 164px;
+        height: 51px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+       
+}

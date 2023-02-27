@@ -1,0 +1,86 @@
+.container_login {
+    background: var(--cinza-clarissimo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 97px 40px 76px 45px;
+
+}
+
+.container_login .titulo {
+    font-family: var(--familia-corpo);
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 8px;
+    padding: 8px;
+}
+
+input[id="email"]::placeholder, input[id="senha"]::placeholder {
+    font-family: var(--familia-corpo);
+    color: var(--cinza-claro);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+ 
+}
+
+.input {
+    padding-left: 12px;
+    padding-top: 3px;
+    box-sizing: border-box;
+    border-style: none none solid none;
+    border-color: var(--borda-input);
+    width: 275px;
+    height: 41px;
+    background: var(--branco);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    left: calc(50% - 275px/2 + 2.5px);
+    top: 204px;
+}
+
+.input-mensagem-erro {
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container_login {
+        padding: 45px 247px 91px 247px;
+    
+    }
+
+    .input {
+        width: 423px;
+        height: 63.13px;
+        margin-bottom: 24px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .container_login {
+        padding: 92px 508px 91px 509px;
+    
+    }
+
+    .container_login .titulo {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        padding: 24.9px;
+    }
+
+    .container_login .botao-azul {
+        width: 423px;
+        height: 62px;
+        
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    
+}

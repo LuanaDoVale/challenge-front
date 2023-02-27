@@ -1,0 +1,99 @@
+.botao-branco {
+    background-color: var(--branco);
+    
+    box-sizing: border-box;
+    width: 133px;
+    height: 40px;
+    
+    text-align: center;
+    font-family: inherit;
+    font-weight: 400;
+    color: var(--azul);
+
+    border: solid 1px;
+    border-color: var(--azul);
+}
+
+.botao-azul {
+    background-color: var(--azul);
+    
+    box-sizing: border-box;
+    width: 133px;
+    height: 40px;
+    display: block;
+    
+    text-align: center;
+    font-family: inherit;
+    font-weight: 400;
+    color: var(--branco);
+
+    border: solid 1px;
+    border-color: var(--azul);
+}
+
+.footer__botao-azul {
+  background-color: var(--azul);
+  
+  box-sizing: border-box;
+  width: 133px;
+  height: 40px;
+  display: block;
+  
+  text-align: center;
+  font-family: inherit;
+  font-weight: 600;
+  color: var(--branco);
+
+  border: solid 1px;
+  border-color: var(--azul);
+}
+
+
+.divBusca{
+    
+    box-sizing: border-box;
+    padding: 8px 16px;
+
+  }
+  
+.caixaBusca{
+    background-color: var(--cinza-claro);
+    float:left;
+    font-size:14px;
+    border:none;
+    border-radius: 20px;
+    padding-left: 16px;
+    width: 300px;
+    height: 26px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .botao-azul {
+    background-color: var(--azul);
+    
+    box-sizing: border-box;
+    width: 133px;
+    height: 40px;
+    display: block;
+    
+    text-align: center;
+    font-family: inherit;
+    font-weight: 400;
+    color: var(--branco);
+
+    border: solid 1px;
+    border-color: var(--azul);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+  .botao-azul {
+    width: 559px;
+    height: 51px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos | Casa Verde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+    <link rel="stylesheet" href="assets/css/botoes.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+</head>
+<body>
+    <header class="cabecalho">   
+        <img src="assets/img/icones/logo-alurageek.svg" alt="Logo AluraGeek" class="cabecalho__logo">
+        <input type="text" id="pesquisa_cabecalho" class="barra-pesquisa" alt="O que deseja encontrar?" placeholder="O que deseja encontrar?">
+        <div class="cabecalho_barra-pesquisa">
+            <a href="#"><button class="botao-branco">Menu Administrador</button></a>
+        </div>
+        <img src="assets/img/icones/barra-pesquisa.svg" class="cabecalho__barraPesquisa" alt="Buscar">
+    </header> 
+    <section class="container_produtos">
+        <h2 class="titulo">Adicionar novo produto</h2>
+        <div class="input_container">
+            <textarea name="url-imagem" id="url-imagem" type="text" class="input" placeholder="URL da Imagem" data-tipo="URL" required></textarea>
+            <textarea name="categoria" id="categoria"type="text" class="input" placeholder="Categoria" data-tipo="categoria" required></textarea>
+            <textarea name="nome-produto" id="nome-produto" type="text" class="input" placeholder="Nome do Produto" data-tipo="nome" required></textarea>
+            <textarea name="preco-produto" id="preco-produto" type="text" class="input" placeholder="Preço do Produto" data-tipo="Preço" required></textarea>
+            <textarea name="descricao" id="descricao" type="text" class="input" placeholder="Descrição do Produto" data-tipo="nome" required></textarea>
+
+        </div>
+        <button class="botao-azul">Adicionar produto</button>
+    </section>
+    <footer class="footer">
+        <section class="secao__footer">
+            <div class="footer-lista">
+                
+                <img src="assets/img/icones/logo-alurageek.svg" class="footer-lista-logo" alt="Logo da AluraGeek">
+                <ul class="footer-lista-principal">
+                    <li  class="footer-lista-principal-item"><a href="#" class="rodape-lista-link">Quem somos nós</a></li>
+                    <li  class="footer-lista-principal-item"><a href="#" class="rodape-lista-link">Política de privacidade</a></li>
+                    <li  class="footer-lista-principal-item"><a href="#" class="rodape-lista-link">Programa fidelidade</a></li>
+                    <li  class="footer-lista-principal-item"><a href="#" class="rodape-lista-link">Nossas Lojas</a></li>
+                    <li  class="footer-lista-principal-item"><a href="#" class="rodape-lista-link">Quero ser franqueado</a></li>
+                    <li  class="footer-lista-principal-item"><a href="#" class="rodape-lista-link">Anuncie aqui</a></li>
+                </ul>
+            </div>
+            <form class="fale_conosco">
+                <h2 class="fale_conosco__titulo">Fale conosco</h2>
+                <textarea name="nome" type="text" class="footer-input-nome" placeholder="Nome" data-tipo="nome" required maxlength="40"></textarea>
+                <span class="input-mensagem-erro">Este campo não está válido</span>
+                <textarea name="mensagem" type="text" class="footer-input-mensagem" placeholder="Escreva sua mensagem" data-tipo="mensagem" required maxlength="120"></textarea>
+                <span class="input-mensagem-erro">Este campo não está válido</span>
+                <button class="footer__botao-azul">Enviar mensagem</button>
+            </form>
+        </section>
+        <section class="rodape">
+            <p class="rodape__texto">Desenvolvido por Luana do Vale<br>2022</p>
+        </section>
+    </footer>
+</body>
+</html>
